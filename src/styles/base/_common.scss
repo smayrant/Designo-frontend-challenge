@@ -1,0 +1,14 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+
+body {
+  font-family: variables.$main-font;
+}
+
+// Center container
+.center {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 25px;
+}

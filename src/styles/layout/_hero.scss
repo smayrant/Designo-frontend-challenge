@@ -1,0 +1,12 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.hero {
+  background-color: variables.$peach;
+  color: variables.$white;
+  text-align: center;
+
+  &__heading {
+    font-weight: 500;
+  }
+}
