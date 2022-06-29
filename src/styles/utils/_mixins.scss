@@ -1,0 +1,9 @@
+@use "../utils/variables";
+
+@mixin button {
+  background-color: variables.$white;
+  border: none;
+  padding: 18px 25px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}

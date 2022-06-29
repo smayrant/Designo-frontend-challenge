@@ -4,11 +4,12 @@
 
 body {
   font-family: variables.$main-font;
+  height: 100%;
 }
 
 // Center container
 .center {
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 0 25px;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 25px;
 }

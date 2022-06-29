@@ -1,0 +1,29 @@
+@use "../utils/variables";
+
+.footer {
+  background-color: variables.$black;
+  color: variables.$white;
+  padding-top: 15.9rem;
+
+  &__logo {
+    max-width: 200px;
+    margin: 1.5rem auto;
+  }
+
+  &__logo-links {
+    text-align: center;
+  }
+
+  &__link {
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 1.7rem;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  &__contact-info-container {
+    text-align: center;
+    color: variables.$light-grey;
+  }
+}

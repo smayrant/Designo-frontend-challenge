@@ -5,8 +5,34 @@
   background-color: variables.$peach;
   color: variables.$white;
   text-align: center;
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
 
   &__heading {
     font-weight: 500;
+  }
+
+  &__description {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    @include mixins.button;
+  }
+
+  &__img-container {
+    height: 440px;
+    text-align: center;
+  }
+
+  &__img {
+    height: auto;
+    position: absolute;
+    bottom: -47%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

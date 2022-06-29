@@ -1,12 +1,11 @@
 @use "../utils/variables";
-@use "../utils/mixins";
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 33px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
   &__logo-img {
     max-width: 200px;
@@ -20,6 +19,6 @@
     width: 23px;
     height: 4px;
     background-color: variables.$black;
-    margin: 5px 0;
+    margin: 4px 0;
   }
 }

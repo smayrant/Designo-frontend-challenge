@@ -1,0 +1,32 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.contact {
+  padding: 4.125rem 1rem;
+  background-color: variables.$peach;
+  color: variables.$white;
+  border-radius: 15px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: -185px;
+
+  &__heading {
+    margin-top: 0;
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  &__cta {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+
+  &__btn {
+    @include mixins.button;
+    margin-top: 1rem;
+  }
+}

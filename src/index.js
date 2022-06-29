@@ -1,5 +1,56 @@
 import "./styles/main.scss";
 import darkLogo from "./img/logo-dark.png";
+import heroPhone from "./img/hero-phone.png";
+import appDesign from "./img/app-design.jpg";
+import graphicDesign from "./img/graphic-design.jpg";
+import webDesign from "./img/web-design.jpg";
+import friendly from "./img/friendly.svg";
+import passionate from "./img/passionate.svg";
+import resourceful from "./img/resourceful.svg";
+import aboutUsBG from "./img/bg-pattern-about-us.svg";
+import contactBG from "./img/bg-pattern-cta.svg";
+import lightLogo from "./img/logo-light.png";
 
 const logoDark = document.querySelector(".header__logo-img");
 logoDark.src = darkLogo;
+
+const phoneHero = document.querySelector(".hero__img");
+phoneHero.src = heroPhone;
+
+const designApp = document.querySelector(".services__img--app");
+designApp.src = appDesign;
+
+const designGraphic = document.querySelector(".services__img--graphic");
+designGraphic.src = graphicDesign;
+
+const designWeb = document.querySelector(".services__img--web");
+designWeb.src = webDesign;
+
+// About Us
+const passionateImg = document.querySelector(".about-us__img--passionate");
+passionateImg.src = passionate;
+
+const resourcefulImg = document.querySelector(".about-us__img--resourceful");
+resourcefulImg.src = resourceful;
+
+const friendlyImg = document.querySelector(".about-us__img--friendly");
+friendlyImg.src = friendly;
+
+const passionateBGImg = document.querySelector(".about-us__bg-img--passionate");
+passionateBGImg.src = aboutUsBG;
+
+const resourcefulBGImg = document.querySelector(
+  ".about-us__bg-img--resourceful"
+);
+resourcefulBGImg.src = aboutUsBG;
+
+const friendlyBGImg = document.querySelector(".about-us__bg-img--friendly");
+friendlyBGImg.src = aboutUsBG;
+
+// Contact
+const contactBGImg = document.querySelector(".contact");
+contactBGImg.style.backgroundImage = `url("${contactBG}")`;
+
+// Footer
+const logoLight = document.querySelector(".footer__logo");
+logoLight.src = lightLogo;

@@ -1,0 +1,36 @@
+.about-us {
+  margin-top: 6rem;
+
+  &__item {
+    text-align: center;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__title {
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+  }
+
+  &__description {
+    margin-top: 2.5rem;
+    line-height: 1.5;
+  }
+  &__img-container {
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    max-width: 200px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+}

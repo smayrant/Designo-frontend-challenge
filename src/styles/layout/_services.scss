@@ -1,0 +1,64 @@
+@use "../utils/variables";
+
+.services {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__img-container {
+    position: relative;
+
+    img {
+      margin-top: 1rem;
+      border-radius: 15px;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__img-overlay-container {
+    margin-top: 1rem;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: variables.$white;
+    // padding: 20px;
+    text-align: center;
+  }
+
+  &__overlay-title {
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 1.9rem;
+    letter-spacing: 1.4px;
+  }
+
+  &__overlay-link {
+    font-size: 15px;
+    letter-spacing: 5px;
+
+    span {
+      color: variables.$peach;
+      font-weight: 600;
+      position: relative;
+      top: -2.2px;
+      right: -5px;
+      font-size: 13px;
+    }
+  }
+
+  &__img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
