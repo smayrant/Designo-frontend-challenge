@@ -2,7 +2,7 @@
 @use "../utils/mixins";
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
 
-body {
+html {
   font-family: variables.$main-font;
   height: 100%;
 }

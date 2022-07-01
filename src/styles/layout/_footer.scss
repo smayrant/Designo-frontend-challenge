@@ -4,6 +4,7 @@
   background-color: variables.$black;
   color: variables.$white;
   padding-top: 15.9rem;
+  padding-bottom: 2rem;
 
   &__logo {
     max-width: 200px;
@@ -12,6 +13,14 @@
 
   &__logo-links {
     text-align: center;
+
+    hr {
+      margin: 0 25px;
+      border: 0;
+      height: 0;
+      border-top: 0.5px solid rgba(151, 151, 151, 0.1);
+      border-bottom: 0.5px solid rgba(151, 151, 151, 0.1);
+    }
   }
 
   &__link {
@@ -24,6 +33,34 @@
 
   &__contact-info-container {
     text-align: center;
-    color: variables.$light-grey;
+    color: variables.$grey-text;
+    margin-top: 2.5rem;
+    letter-spacing: 0.6px;
+  }
+
+  &__address {
+    font-style: normal;
+    line-height: 1.5;
+
+    div:first-child {
+      font-weight: 600;
+    }
+  }
+
+  &__contact-us {
+    margin-top: 3rem;
+    line-height: 1.5;
+  }
+
+  &__contact-us-office {
+    font-weight: 600;
+  }
+
+  &__social {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 2rem auto;
   }
 }
