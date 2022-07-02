@@ -7,3 +7,11 @@
   border-radius: 8px;
   text-transform: uppercase;
 }
+
+@mixin orangeHero {
+  background-color: variables.$peach;
+  color: variables.$white;
+  text-align: center;
+  padding: 4.5rem 1rem;
+  background-position: bottom right;
+}

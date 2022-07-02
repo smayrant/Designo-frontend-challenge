@@ -1,11 +1,8 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 .hero--design {
-  background-color: variables.$peach;
-  color: variables.$white;
-  text-align: center;
-  padding: 4.5rem 1rem;
-  background-position: bottom right;
+  @include mixins.orangeHero;
 
   h1 {
     font-weight: 500;

@@ -560,49 +560,49 @@ html {
   margin: 2rem auto;
 }
 
-.hero--web-design {
+.hero--design {
   background-color: #e7816b;
   color: #ffffff;
   text-align: center;
   padding: 4.5rem 1rem;
   background-position: bottom right;
 }
-.hero--web-design h1 {
+.hero--design h1 {
   font-weight: 500;
 }
-.hero--web-design p {
+.hero--design p {
   font-size: 15px;
   line-height: 1.5;
 }
 
-.web-design {
+.design {
   margin-top: 5rem;
 }
-.web-design__card-container {
+.design__card-container {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   margin-top: 2.5rem;
 }
-.web-design__card-container img {
+.design__card-container img {
   max-width: 100%;
   height: auto;
   margin: 0;
   border-radius: 15px 15px 0 0;
 }
-.web-design__card-info {
+.design__card-info {
   margin-top: 0;
   background-color: #fdf3f0;
   border-radius: 0 0 15px 15px;
   padding: 1.5rem 1rem;
   text-align: center;
 }
-.web-design__card-info h3 {
+.design__card-info h3 {
   text-transform: uppercase;
   color: #e7816b;
   font-weight: 500;
   letter-spacing: 5px;
 }
-.web-design__card-info p {
+.design__card-info p {
   line-height: 1.5;
 }

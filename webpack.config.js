@@ -9,6 +9,8 @@ module.exports = {
     index: "./src/index.js",
     webDesign: "./src/web-design.js",
     appDesign: "./src/app-design.js",
+    graphicDesign: "./src/graphic-design.js",
+    about: "./src/about.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -76,6 +78,16 @@ module.exports = {
       filename: "app-design.html",
       template: "src/app-design.html",
       chunks: ["appDesign"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "graphic-design.html",
+      template: "src/graphic-design.html",
+      chunks: ["graphicDesign"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "src/about.html",
+      chunks: ["about"],
     }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),
