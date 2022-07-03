@@ -23,10 +23,9 @@
 }
 
 .about {
-  &__text-container {
-    background-color: variables.$faded-peach;
-    text-align: center;
-    padding: 3rem 1rem;
+  &__text-container--talent,
+  &__text-container--real-deal {
+    @include mixins.fadedPeachBG;
 
     h2 {
       color: variables.$peach;
@@ -39,4 +38,8 @@
       line-height: 1.5;
     }
   }
+}
+
+.real-deal-img {
+  display: block;
 }

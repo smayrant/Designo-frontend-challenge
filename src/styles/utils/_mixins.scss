@@ -1,7 +1,6 @@
 @use "../utils/variables";
 
 @mixin button {
-  background-color: variables.$white;
   border: none;
   padding: 18px 25px;
   border-radius: 8px;
@@ -14,4 +13,12 @@
   text-align: center;
   padding: 4.5rem 1rem;
   background-position: bottom right;
+}
+
+@mixin fadedPeachBG {
+  background-color: variables.$faded-peach;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

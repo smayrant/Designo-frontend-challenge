@@ -27,6 +27,7 @@
 
   &__btn {
     @include mixins.button;
+    background-color: variables.$white;
     margin-top: 1rem;
   }
 }
