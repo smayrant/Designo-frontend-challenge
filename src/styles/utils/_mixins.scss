@@ -22,3 +22,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin peachTitle {
+  color: variables.$peach;
+  font-weight: 500;
+  font-size: 2rem;
+}

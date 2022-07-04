@@ -333,6 +333,34 @@ html {
   padding: 0 25px;
 }
 
+.location {
+  margin-top: 6rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.location__img-container {
+  position: relative;
+}
+.location__img-container img:first-child {
+  position: absolute;
+}
+.location__item {
+  margin-top: 4rem;
+}
+.location__item button {
+  border: none;
+  padding: 18px 25px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: #e7816b;
+  color: #ffffff;
+}
+.location__item h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -370,7 +398,6 @@ html {
 }
 .hero__button {
   margin-top: 1rem;
-  background-color: #ffffff;
   border: none;
   padding: 18px 25px;
   border-radius: 8px;
@@ -497,11 +524,11 @@ html {
   font-size: 15px;
 }
 .contact__btn {
-  background-color: #ffffff;
   border: none;
   padding: 18px 25px;
   border-radius: 8px;
   text-transform: uppercase;
+  background-color: #ffffff;
   margin-top: 1rem;
 }
 
@@ -605,4 +632,83 @@ html {
 }
 .design__card-info p {
   line-height: 1.5;
+}
+
+.hero--about {
+  background-color: #e7816b;
+  color: #ffffff;
+  text-align: center;
+  padding: 4.5rem 1rem;
+  background-position: bottom right;
+  background-position: top left;
+}
+.hero--about h1 {
+  font-weight: 500;
+}
+.hero--about p {
+  line-height: 1.5;
+}
+
+.about__hero-img,
+.talent-img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.about__text-container--talent, .about__text-container--real-deal {
+  background-color: #fdf3f0;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__text-container--talent h2, .about__text-container--real-deal h2 {
+  color: #e7816b;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.about__text-container--talent p, .about__text-container--real-deal p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.real-deal-img {
+  display: block;
+}
+
+.locations__container {
+  margin-bottom: 3rem;
+}
+.locations__container img {
+  display: block;
+}
+.locations__address-container {
+  background-color: #fdf3f0;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+.locations__title {
+  color: #e7816b;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.locations__address {
+  font-style: normal;
+}
+.locations__address div:first-child {
+  font-weight: 600;
+}
+.locations__contact-us {
+  margin-top: 1.5rem;
+}
+.locations__contact {
+  font-weight: 600;
 }

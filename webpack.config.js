@@ -11,6 +11,8 @@ module.exports = {
     appDesign: "./src/app-design.js",
     graphicDesign: "./src/graphic-design.js",
     about: "./src/about.js",
+    locations: "./src/locations.js",
+    contact: "./src/contact.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -88,6 +90,16 @@ module.exports = {
       filename: "about.html",
       template: "src/about.html",
       chunks: ["about"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "locations.html",
+      template: "src/locations.html",
+      chunks: ["locations"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "src/contact.html",
+      chunks: ["contact"],
     }),
     new MiniCssExtractPlugin(),
     require("autoprefixer"),

@@ -28,9 +28,7 @@
     @include mixins.fadedPeachBG;
 
     h2 {
-      color: variables.$peach;
-      font-weight: 500;
-      font-size: 2rem;
+      @include mixins.peachTitle;
     }
 
     p {
