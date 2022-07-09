@@ -8,6 +8,7 @@ import todoImg from "./img/todo.jpg";
 import loopstudiosImg from "./img/loopstudios.jpg";
 import graphicDesign from "./img/graphic-design.jpg";
 import webDesign from "./img/web-design.jpg";
+import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
 import igIcon from "./img/icon-instagram.svg";
@@ -41,6 +42,10 @@ designWeb.src = webDesign;
 
 const designGraphic = document.querySelector(".services__img--graphic");
 designGraphic.src = graphicDesign;
+
+// Contact
+const contactBGImg = document.querySelector(".contact");
+contactBGImg.style.backgroundImage = `url("${contactBG}")`;
 
 // Footer
 const logoLight = document.querySelector(".footer__logo");

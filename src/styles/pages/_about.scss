@@ -5,17 +5,29 @@
   @include mixins.orangeHero;
   background-position: top left;
 
+  @media (min-width: variables.$md-breakPt) {
+    border-radius: 0 0 15px 15px;
+  }
+
   h1 {
     font-weight: 500;
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 3rem;
+    }
   }
 
   p {
     line-height: 1.5;
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 570px;
+      margin: 0 auto;
+    }
   }
 }
 
 .about__hero-img,
-.talent-img {
+.talent-img,
+.real-deal-img {
   display: block;
   margin: 0;
   width: 100%;
@@ -29,15 +41,55 @@
 
     h2 {
       @include mixins.peachTitle;
+      @media (min-width: variables.$md-breakPt) {
+        font-size: 2.5rem;
+      }
     }
 
     p {
       font-size: 15px;
       line-height: 1.5;
+
+      @media (min-width: variables.$md-breakPt) {
+        max-width: 510px;
+        margin: 1rem auto;
+      }
+    }
+    @media (min-width: variables.$md-breakPt) {
+      border-radius: 0 0 15px 15px;
+    }
+  }
+
+  &__talent-container,
+  &__real-deal-container {
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 1350px;
+      margin: 0 auto;
+      padding: 0 35px;
+    }
+
+    img {
+      @media (min-width: variables.$md-breakPt) {
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
     }
   }
 }
 
-.real-deal-img {
-  display: block;
+.img-hero__container {
+  @media (min-width: variables.$md-breakPt) {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 35px;
+    margin-bottom: 6rem;
+  }
+  img {
+    @media (min-width: variables.$md-breakPt) {
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+  }
 }

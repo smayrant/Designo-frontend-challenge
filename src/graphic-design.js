@@ -6,6 +6,7 @@ import changeImg from "./img/change.jpg";
 import scienceImg from "./img/science.jpg";
 import appDesign from "./img/app-design.jpg";
 import webDesign from "./img/web-design.jpg";
+import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
 import igIcon from "./img/icon-instagram.svg";
@@ -33,6 +34,10 @@ change.src = changeImg;
 
 const science = document.querySelector(".design__card-img--science");
 science.src = scienceImg;
+
+// Contact
+const contactBGImg = document.querySelector(".contact");
+contactBGImg.style.backgroundImage = `url("${contactBG}")`;
 
 // Footer
 const logoLight = document.querySelector(".footer__logo");

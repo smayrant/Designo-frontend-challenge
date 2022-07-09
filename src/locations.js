@@ -4,6 +4,7 @@ import canada from "./img/map-canada.png";
 import australia from "./img/map-australia.png";
 import unitedKingdom from "./img/map-uk.png";
 import bgImg from "./img/bg-pattern-three-circles.svg";
+import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
 import igIcon from "./img/icon-instagram.svg";
@@ -27,6 +28,10 @@ const bg = document.querySelectorAll(".locations__address-container");
 bg.forEach(function (elem) {
   elem.style.backgroundImage = `url("${bgImg}")`;
 });
+
+// Contact
+const contactBGImg = document.querySelector(".contact");
+contactBGImg.style.backgroundImage = `url("${contactBG}")`;
 
 // Footer
 const logoLight = document.querySelector(".footer__logo");

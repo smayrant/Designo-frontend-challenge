@@ -1,7 +1,7 @@
 import "./styles/main.scss";
 import darkLogo from "./img/logo-dark.png";
 import aboutBG from "./img/bg-pattern-intro-web.svg";
-import heroImg from "./img/about-hero.png";
+import heroImg from "./img/about-hero.jpg";
 import talent from "./img/world-class-talent.jpg";
 import canada from "./img/canada.svg";
 import australia from "./img/australia.svg";
@@ -9,6 +9,7 @@ import unitedKingdom from "./img/united-kingdom.svg";
 import BGImgSm from "./img/bg-pattern-small-circle.svg";
 import BGImgLg from "./img/bg-pattern-three-circles.svg";
 import realDeal from "./img/real-deal.jpg";
+import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
 import igIcon from "./img/icon-instagram.svg";
@@ -52,6 +53,10 @@ realDealBg.style.backgroundImage = `url("${BGImgLg}")`;
 
 const realDealImg = document.querySelector(".real-deal-img");
 realDealImg.src = realDeal;
+
+// Contact
+const contactBGImg = document.querySelector(".contact");
+contactBGImg.style.backgroundImage = `url("${contactBG}")`;
 
 // Footer
 const logoLight = document.querySelector(".footer__logo");

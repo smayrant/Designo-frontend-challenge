@@ -4,16 +4,39 @@
 .locations {
   &__container {
     margin-bottom: 3rem;
+
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 1350px;
+      margin: 0 auto;
+      padding: 0 35px;
+      margin-bottom: 3rem;
+    }
     img {
       display: block;
+
+      @media (min-width: variables.$md-breakPt) {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 1.5rem;
+      }
     }
   }
+
   &__address-container {
     @include mixins.fadedPeachBG;
     font-size: 15px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.5px;
+
+    @media (min-width: variables.$md-breakPt) {
+      border-radius: 15px;
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__address-container--last {
+    margin-bottom: 0;
   }
 
   &__title {

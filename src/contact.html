@@ -17,29 +17,38 @@
           <div class="header__burger-line"></div>
           <div class="header__burger-line"></div>
         </div>
+        <nav class="header__nav">
+          <ul class="header__nav-links">
+            <li><a href="/about.html">about us</a></li>
+            <li><a href="/locations.html">locations</a></li>
+            <li><a href="/contact.html">contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="contact-us">
       <div class="contact-us__bg">
         <div class="contact-us__container">
-          <h2>Contact Us</h2>
-          <p>
-            Ready to take it to the next level? Let’s talk about your project or
-            idea and find out how we can help your business grow. If you are
-            looking for unique digital experiences that’s relatable to your
-            users, drop us a line.
-          </p>
-          <form class="contact-us__form">
-            <input type="text" name="Name" placeholder="Name" />
-            <input type="email" name="Email" placeholder="Email Address" />
-            <input type="number" name="Phone Number" placeholder="Phone" />
-            <textarea
-              name="Message"
-              placeholder="Your Message"
-              rows="5"
-            ></textarea>
-            <button>submit</button>
-          </form>
+          <div class="contact-us__container--inner">
+            <h2>Contact Us</h2>
+            <p>
+              Ready to take it to the next level? Let’s talk about your project
+              or idea and find out how we can help your business grow. If you
+              are looking for unique digital experiences that’s relatable to
+              your users, drop us a line.
+            </p>
+            <form class="contact-us__form">
+              <input type="text" name="Name" placeholder="Name" />
+              <input type="email" name="Email" placeholder="Email Address" />
+              <input type="number" name="Phone Number" placeholder="Phone" />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                rows="5"
+              ></textarea>
+              <button>submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -79,16 +88,23 @@
     </div>
     <section class="footer__container">
       <footer class="footer contact-us__footer">
-        <div class="footer__logo-links">
-          <img src="" alt="Footer Logo" class="footer__logo" />
+        <div class="footer__logo-links center">
+          <div class="footer__logo-links--desktop">
+            <img src="" alt="Footer Logo" class="footer__logo" />
+            <nav class="footer__link-container footer__link-container--desktop">
+              <li class="footer__link">our company</li>
+              <li class="footer__link">locations</li>
+              <li class="footer__link">contact</li>
+            </nav>
+          </div>
           <hr class="center" />
-          <nav class="footer__link-container">
+          <nav class="footer__link-container footer__link-container--mobile">
             <li class="footer__link">our company</li>
             <li class="footer__link">locations</li>
             <li class="footer__link">contact</li>
           </nav>
         </div>
-        <div class="footer__contact-info-container">
+        <div class="footer__contact-info-container center">
           <address class="footer__address">
             <div>Designo Central Office</div>
             <div>3886 Wellington Street</div>

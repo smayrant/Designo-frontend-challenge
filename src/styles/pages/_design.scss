@@ -1,16 +1,38 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
+.hero__container--design {
+  @media (min-width: variables.$md-breakPt) {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+}
+
 .hero--design {
   @include mixins.orangeHero;
 
   h1 {
     font-weight: 500;
+
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 3rem;
+    }
   }
 
   p {
     font-size: 15px;
     line-height: 1.5;
+
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 370px;
+      margin: 0 auto;
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: variables.$md-breakPt) {
+    border-radius: 15px;
   }
 }
 
@@ -26,6 +48,17 @@
       height: auto;
       margin: 0;
       border-radius: 15px 15px 0 0;
+
+      @media (min-width: variables.$md-breakPt) {
+        max-width: 50%;
+        border-radius: 15px 0 0 15px;
+      }
+    }
+
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
     }
   }
 
@@ -35,6 +68,15 @@
     border-radius: 0 0 15px 15px;
     padding: 1.5rem 1rem;
     text-align: center;
+
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      border-radius: 0 15px 15px 0;
+    }
+
     h3 {
       text-transform: uppercase;
       color: variables.$peach;
@@ -43,6 +85,11 @@
     }
     p {
       line-height: 1.5;
+
+      @media (min-width: variables.$md-breakPt) {
+        max-width: 260px;
+        margin: 0 auto;
+      }
     }
   }
 }

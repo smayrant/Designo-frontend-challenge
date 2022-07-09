@@ -28,7 +28,16 @@
     margin: 4px 0;
   }
 
+  &__nav {
+    @media (max-width: variables.$md-breakPt) {
+      display: none;
+    }
+  }
+
   &__nav-links {
+    @media (max-width: variables.$md-breakPt) {
+      display: none;
+    }
     list-style: none;
     display: flex;
     li {

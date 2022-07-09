@@ -2,6 +2,13 @@
 @use "../utils/mixins";
 
 .contact-us {
+  &__bg {
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 1350px;
+      margin: 0 auto;
+      padding: 0 35px;
+    }
+  }
   &__container {
     @include mixins.orangeHero;
     background-size: cover;
@@ -10,6 +17,10 @@
     h2 {
       font-weight: 500;
       font-size: 2rem;
+
+      @media (min-width: variables.$md-breakPt) {
+        font-size: 3rem;
+      }
     }
 
     p {
@@ -36,12 +47,26 @@
         letter-spacing: 1px;
         padding: 18px 45px;
         margin-top: 2rem;
+        float: right;
       }
+    }
+
+    @media (min-width: variables.$md-breakPt) {
+      border-radius: 15px;
+      padding-bottom: 10rem;
+    }
+  }
+
+  &__container--inner {
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: left;
     }
   }
 
   &__footer {
-    padding-top: 1rem;
+    padding-top: 4rem;
   }
 }
 
