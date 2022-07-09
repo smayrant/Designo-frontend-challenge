@@ -11,6 +11,12 @@
     max-width: 200px;
   }
 
+  &__burger {
+    @media (min-width: variables.$md-breakPt) {
+      display: none;
+    }
+  }
+
   &__burger-line:first-of-type {
     margin-top: 0;
   }
@@ -20,5 +26,15 @@
     height: 4px;
     background-color: variables.$black;
     margin: 4px 0;
+  }
+
+  &__nav-links {
+    list-style: none;
+    display: flex;
+    li {
+      margin-left: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
   }
 }

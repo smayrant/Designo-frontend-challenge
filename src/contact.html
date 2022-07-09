@@ -20,15 +20,27 @@
       </div>
     </header>
     <main class="contact-us">
-      <div class="contact-us__container">
-        <h2>Contact Us</h2>
-        <p>
-          Ready to take it to the next level? Let’s talk about your project or
-          idea and find out how we can help your business grow. If you are
-          looking for unique digital experiences that’s relatable to your users,
-          drop us a line.
-        </p>
-        <form action=""></form>
+      <div class="contact-us__bg">
+        <div class="contact-us__container">
+          <h2>Contact Us</h2>
+          <p>
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+          <form class="contact-us__form">
+            <input type="text" name="Name" placeholder="Name" />
+            <input type="email" name="Email" placeholder="Email Address" />
+            <input type="number" name="Phone Number" placeholder="Phone" />
+            <textarea
+              name="Message"
+              placeholder="Your Message"
+              rows="5"
+            ></textarea>
+            <button>submit</button>
+          </form>
+        </div>
       </div>
     </main>
     <div class="location center">
@@ -42,11 +54,7 @@
       </div>
       <div class="location__item">
         <div class="location__img-container">
-          <img
-            src=""
-            alt="Background Circle"
-            class="location__bg-img--second"
-          />
+          <img src="" alt="Background Circle" class="location__bg-img" />
           <img
             src=""
             alt="Sydney Opera House"
@@ -58,7 +66,7 @@
       </div>
       <div class="location__item">
         <div class="location__img-container">
-          <img src="" alt="Background Circle" class="location__bg-img--third" />
+          <img src="" alt="Background Circle" class="location__bg-img" />
           <img
             src=""
             alt="Tower Bridge"
@@ -70,7 +78,7 @@
       </div>
     </div>
     <section class="footer__container">
-      <footer class="footer">
+      <footer class="footer contact-us__footer">
         <div class="footer__logo-links">
           <img src="" alt="Footer Logo" class="footer__logo" />
           <hr class="center" />

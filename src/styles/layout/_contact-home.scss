@@ -18,6 +18,10 @@
     font-weight: 500;
     padding-left: 2rem;
     padding-right: 2rem;
+
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 2.5rem;
+    }
   }
 
   &__cta {
@@ -29,5 +33,12 @@
     @include mixins.button;
     background-color: variables.$white;
     margin-top: 1rem;
+  }
+
+  &__container--inner {
+    @media (min-width: variables.$md-breakPt) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
   }
 }

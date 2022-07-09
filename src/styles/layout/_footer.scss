@@ -7,8 +7,12 @@
   padding-bottom: 2rem;
 
   &__logo {
-    max-width: 200px;
+    width: 30%;
+    height: 50%;
     margin: 1.5rem auto;
+    @media (min-width: variables.$md-breakPt) {
+      margin: 0;
+    }
   }
 
   &__logo-links {
@@ -29,6 +33,38 @@
     margin-top: 1.7rem;
     font-size: 14px;
     letter-spacing: 2px;
+
+    @media (min-width: variables.$md-breakPt) {
+      margin-top: 0;
+    }
+  }
+
+  &__link-container--mobile {
+    @media (min-width: variables.$md-breakPt) {
+      display: none;
+    }
+  }
+
+  &__link-container--desktop {
+    @media (max-width: variables.$md-breakPt) {
+      display: none;
+    }
+
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      li {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__logo-links--desktop {
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
   }
 
   &__contact-info-container {
@@ -36,6 +72,13 @@
     color: variables.$grey-text;
     margin-top: 2.5rem;
     letter-spacing: 0.6px;
+
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
   }
 
   &__address {
@@ -62,5 +105,12 @@
     justify-content: space-between;
     max-width: 200px;
     margin: 2rem auto;
+
+    @media (min-width: variables.$md-breakPt) {
+      margin: 0;
+      img {
+        margin-left: 0.8rem;
+      }
+    }
   }
 }

@@ -1,16 +1,37 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
+.hero__container {
+  @media (min-width: variables.$md-breakPt) {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+}
+
 .hero {
+  @media (min-width: variables.$md-breakPt) {
+    border-radius: 15px;
+  }
   background-color: variables.$peach;
   color: variables.$white;
   text-align: center;
   padding-top: 50px;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__info-container {
+    max-width: 490px;
+    margin: 0 auto;
+  }
 
   &__heading {
     font-weight: 500;
+    @media (min-width: variables.$md-breakPt) {
+      font-size: 3rem;
+    }
   }
 
   &__description {
@@ -24,7 +45,7 @@
   }
 
   &__img-container {
-    height: 440px;
+    height: 450px;
     text-align: center;
   }
 

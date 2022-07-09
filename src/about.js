@@ -39,14 +39,10 @@ const unitedKingdomImg = document.querySelector(
 );
 unitedKingdomImg.src = unitedKingdom;
 
-const background = document.querySelector(".location__bg-img");
-background.src = BGImgSm;
-
-const background2 = document.querySelector(".location__bg-img--second");
-background2.src = BGImgSm;
-
-const background3 = document.querySelector(".location__bg-img--third");
-background3.src = BGImgSm;
+const bg = document.querySelectorAll(".location__bg-img");
+bg.forEach(function (elem) {
+  elem.src = BGImgSm;
+});
 
 const talentBg = document.querySelector(".about__text-container--talent");
 talentBg.style.backgroundImage = `url("${BGImgLg}")`;

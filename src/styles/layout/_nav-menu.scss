@@ -1,0 +1,40 @@
+@use "../utils/variables";
+
+.main-nav {
+  position: absolute;
+  background-color: variables.$black;
+  width: 100%;
+  left: 0;
+  top: 90px;
+  z-index: 10;
+  color: variables.$white;
+  text-transform: uppercase;
+  line-height: 2.5;
+  letter-spacing: 2.5px;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  .nav-links {
+    list-style: none;
+  }
+  display: none;
+}
+
+.page-mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 381px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+
+// will be added to body when menu is open
+.no-scroll {
+  overflow: hidden;
+}
+
+.visible {
+  display: block;
+}

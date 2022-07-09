@@ -28,20 +28,19 @@
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     color: variables.$white;
-    // padding: 20px;
     text-align: center;
   }
 
   &__overlay-title {
     font-weight: 500;
     margin-top: 0;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     letter-spacing: 1.4px;
   }
 
   &__overlay-link {
     font-size: 15px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 
     span {
       color: variables.$peach;

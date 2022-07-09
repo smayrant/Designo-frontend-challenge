@@ -1,1 +1,52 @@
 @use "../utils/variables";
+@use "../utils/mixins";
+
+.contact-us {
+  &__container {
+    @include mixins.orangeHero;
+    background-size: cover;
+    background-position: top;
+
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    form {
+      input,
+      textarea {
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 14px 12px;
+        border: none;
+        border-bottom: 1.1px solid variables.$white;
+        background: transparent;
+        margin-bottom: 10px;
+      }
+
+      button {
+        @include mixins.button;
+        background-color: variables.$white;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 18px 45px;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__footer {
+    padding-top: 1rem;
+  }
+}
+
+::placeholder {
+  font-size: 15px;
+  color: variables.$placeholder-text;
+  opacity: 1;
+}

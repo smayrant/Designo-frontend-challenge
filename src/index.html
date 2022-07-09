@@ -17,21 +17,38 @@
           <div class="header__burger-line"></div>
           <div class="header__burger-line"></div>
         </div>
+        <nav class="header__nav">
+          <ul class="header__nav-links">
+            <li><a href="/about.html">about us</a></li>
+            <li><a href="/locations.html">locations</a></li>
+            <li><a href="/contact.html">contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
+    <div class="page-mask"></div>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="/about.html">about us</a></li>
+        <li><a href="/locations.html">locations</a></li>
+        <li><a href="/contact.html">contact</a></li>
+      </ul>
+    </nav>
     <section class="hero__container">
       <div class="hero center">
-        <h1 class="hero__heading">
-          Award-winning custom designs and digital branding solutions
-        </h1>
-        <p class="hero__description">
-          With over 10 years in the industry, we are experienced in creating
-          fully responsive websites, app design, and engaging brand experiences.
-          Find out more about our services.
-        </p>
-        <button class="hero__button btn">Learn More</button>
-        <div class="hero__img-container">
-          <img src="" alt="Hero phone" class="hero__img" />
+        <div class="hero__info-container">
+          <h1 class="hero__heading">
+            Award-winning custom designs and digital branding solutions
+          </h1>
+          <p class="hero__description">
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <button class="hero__button btn">Learn More</button>
+          <div class="hero__img-container">
+            <img src="" alt="Hero phone" class="hero__img" />
+          </div>
         </div>
       </div>
     </section>
@@ -91,12 +108,14 @@
               class="about-us__img--passionate"
             />
           </div>
-          <h3 class="about-us__title">passionate</h3>
-          <p class="about-us__description">
-            Each project starts with an in-depth brand research to ensure we
-            only create products that serve a purpose. We merge art, design, and
-            technology into exciting new solutions.
-          </p>
+          <div class="about-us__title-description">
+            <h3 class="about-us__title">passionate</h3>
+            <p class="about-us__description">
+              Each project starts with an in-depth brand research to ensure we
+              only create products that serve a purpose. We merge art, design,
+              and technology into exciting new solutions.
+            </p>
+          </div>
         </div>
         <div class="about-us__item">
           <div class="about-us__img-container">
@@ -111,12 +130,14 @@
               class="about-us__img--resourceful"
             />
           </div>
-          <h3 class="about-us__title">resourceful</h3>
-          <p class="about-us__description">
-            Everything that we do has a strategic purpose. We use an agile
-            approach in all of our projects and value customer collaboration. It
-            guarantees superior results that fulfill our clients’ needs.
-          </p>
+          <div class="about-us__title-description">
+            <h3 class="about-us__title">resourceful</h3>
+            <p class="about-us__description">
+              Everything that we do has a strategic purpose. We use an agile
+              approach in all of our projects and value customer collaboration.
+              It guarantees superior results that fulfill our clients’ needs.
+            </p>
+          </div>
         </div>
         <div class="about-us__item">
           <div class="about-us__img-container">
@@ -127,37 +148,48 @@
             />
             <img src="" alt="friendly Figure" class="about-us__img--friendly" />
           </div>
-          <h3 class="about-us__title">friendly</h3>
-          <p class="about-us__description">
-            We are a group of enthusiastic folks who know how to put people
-            first. Our success depends on our customers, and we strive to give
-            them the best experience a company can provide.
-          </p>
+          <div class="about-us__title-description">
+            <h3 class="about-us__title">friendly</h3>
+            <p class="about-us__description">
+              We are a group of enthusiastic folks who know how to put people
+              first. Our success depends on our customers, and we strive to give
+              them the best experience a company can provide.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="contact__container center">
       <div class="contact">
-        <h3 class="contact__heading">Let's talk about your project</h3>
-        <p class="contact__cta">
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
-        </p>
-        <button class="contact__btn btn">get in touch</button>
+        <div class="contact__container--inner">
+          <h3 class="contact__heading">Let's talk about your project</h3>
+          <p class="contact__cta">
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+          <button class="contact__btn btn">get in touch</button>
+        </div>
       </div>
     </section>
     <section class="footer__container">
       <footer class="footer">
-        <div class="footer__logo-links">
-          <img src="" alt="Footer Logo" class="footer__logo" />
+        <div class="footer__logo-links center">
+          <div class="footer__logo-links--desktop">
+            <img src="" alt="Footer Logo" class="footer__logo" />
+            <nav class="footer__link-container footer__link-container--desktop">
+              <li class="footer__link">our company</li>
+              <li class="footer__link">locations</li>
+              <li class="footer__link">contact</li>
+            </nav>
+          </div>
           <hr class="center" />
-          <nav class="footer__link-container">
+          <nav class="footer__link-container footer__link-container--mobile">
             <li class="footer__link">our company</li>
             <li class="footer__link">locations</li>
             <li class="footer__link">contact</li>
           </nav>
         </div>
-        <div class="footer__contact-info-container">
+        <div class="footer__contact-info-container center">
           <address class="footer__address">
             <div>Designo Central Office</div>
             <div>3886 Wellington Street</div>

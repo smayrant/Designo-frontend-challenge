@@ -1,5 +1,6 @@
 import "./styles/main.scss";
 import darkLogo from "./img/logo-dark.png";
+import background from "./img/bg-pattern.svg";
 import heroPhone from "./img/hero-phone.png";
 import appDesign from "./img/app-design.jpg";
 import graphicDesign from "./img/graphic-design.jpg";
@@ -18,6 +19,9 @@ import ytIcon from "./img/icon-youtube.svg";
 
 const logoDark = document.querySelector(".header__logo-img");
 logoDark.src = darkLogo;
+
+const heroBG = document.querySelector(".hero ");
+heroBG.style.backgroundImage = `url("${background}")`;
 
 const phoneHero = document.querySelector(".hero__img");
 phoneHero.src = heroPhone;
@@ -74,3 +78,21 @@ iconPt.src = ptIcon;
 
 const iconIg = document.querySelector(".footer__icon--ig");
 iconIg.src = igIcon;
+
+// Get burger menu, page mask and menu elements
+const burger = document.querySelector(".header__burger");
+const pageMask = document.querySelector(".page-mask");
+const navMenu = document.querySelector(".main-nav");
+
+const toggleVisibility = (...className) => {
+  document.body.classList.toggle("no-scroll");
+  className.forEach(function (className) {
+    console.log(className);
+    className.classList.toggle("visible");
+  });
+};
+
+burger.addEventListener(
+  "click",
+  toggleVisibility.bind(null, navMenu, pageMask)
+);

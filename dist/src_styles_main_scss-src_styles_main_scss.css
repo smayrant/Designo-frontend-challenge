@@ -381,6 +381,44 @@ html {
   margin: 4px 0;
 }
 
+.main-nav {
+  position: absolute;
+  background-color: #1d1c1e;
+  width: 100%;
+  left: 0;
+  top: 90px;
+  z-index: 10;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 2.5;
+  letter-spacing: 2.5px;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  display: none;
+}
+.main-nav .nav-links {
+  list-style: none;
+}
+
+.page-mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 381px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visible {
+  display: block;
+}
+
 .hero {
   background-color: #e7816b;
   color: #ffffff;
@@ -404,13 +442,13 @@ html {
   text-transform: uppercase;
 }
 .hero__img-container {
-  height: 440px;
+  height: 480px;
   text-align: center;
 }
 .hero__img {
   height: auto;
   position: absolute;
-  bottom: -47%;
+  bottom: -50%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -711,4 +749,52 @@ html {
 }
 .locations__contact {
   font-weight: 600;
+}
+
+.contact-us__container {
+  background-color: #e7816b;
+  color: #ffffff;
+  text-align: center;
+  padding: 4.5rem 1rem;
+  background-position: bottom right;
+  background-size: cover;
+  background-position: top;
+}
+.contact-us__container h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.contact-us__container p {
+  line-height: 1.5;
+}
+.contact-us__container form input,
+.contact-us__container form textarea {
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 14px 12px;
+  border: none;
+  border-bottom: 1.1px solid #ffffff;
+  background: transparent;
+  margin-bottom: 10px;
+}
+.contact-us__container form button {
+  border: none;
+  padding: 18px 25px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 18px 45px;
+  margin-top: 2rem;
+}
+.contact-us__footer {
+  padding-top: 1rem;
+}
+
+::placeholder {
+  font-size: 15px;
+  color: #f3bfb5;
+  opacity: 1;
 }

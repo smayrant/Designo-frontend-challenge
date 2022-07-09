@@ -1,12 +1,25 @@
+@use "../utils/variables";
+
 .about-us {
   margin-top: 6rem;
 
   &__item {
+    @media (min-width: variables.$md-breakPt) {
+      display: flex;
+    }
+
     text-align: center;
 
     &:nth-child(2),
     &:nth-child(3) {
       margin-top: 4rem;
+    }
+  }
+
+  &__title-description {
+    @media (min-width: variables.$md-breakPt) {
+      margin-left: 3.5rem;
+      text-align: left;
     }
   }
 

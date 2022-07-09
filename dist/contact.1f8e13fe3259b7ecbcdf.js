@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_logo_dark_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/logo-dark.png */ \"./src/img/logo-dark.png\");\n/* harmony import */ var _img_hero_phone_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/hero-phone.png */ \"./src/img/hero-phone.png\");\n/* harmony import */ var _img_app_design_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/app-design.jpg */ \"./src/img/app-design.jpg\");\n/* harmony import */ var _img_graphic_design_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/graphic-design.jpg */ \"./src/img/graphic-design.jpg\");\n/* harmony import */ var _img_web_design_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/web-design.jpg */ \"./src/img/web-design.jpg\");\n/* harmony import */ var _img_friendly_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/friendly.svg */ \"./src/img/friendly.svg\");\n/* harmony import */ var _img_passionate_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/passionate.svg */ \"./src/img/passionate.svg\");\n/* harmony import */ var _img_resourceful_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/resourceful.svg */ \"./src/img/resourceful.svg\");\n/* harmony import */ var _img_bg_pattern_about_us_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/bg-pattern-about-us.svg */ \"./src/img/bg-pattern-about-us.svg\");\n/* harmony import */ var _img_bg_pattern_cta_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./img/bg-pattern-cta.svg */ \"./src/img/bg-pattern-cta.svg\");\n/* harmony import */ var _img_logo_light_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./img/logo-light.png */ \"./src/img/logo-light.png\");\n/* harmony import */ var _img_icon_facebook_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./img/icon-facebook.svg */ \"./src/img/icon-facebook.svg\");\n/* harmony import */ var _img_icon_instagram_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./img/icon-instagram.svg */ \"./src/img/icon-instagram.svg\");\n/* harmony import */ var _img_icon_pinterest_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./img/icon-pinterest.svg */ \"./src/img/icon-pinterest.svg\");\n/* harmony import */ var _img_icon_twitter_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./img/icon-twitter.svg */ \"./src/img/icon-twitter.svg\");\n/* harmony import */ var _img_icon_youtube_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./img/icon-youtube.svg */ \"./src/img/icon-youtube.svg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar logoDark = document.querySelector(\".header__logo-img\");\nlogoDark.src = _img_logo_dark_png__WEBPACK_IMPORTED_MODULE_1__;\nvar phoneHero = document.querySelector(\".hero__img\");\nphoneHero.src = _img_hero_phone_png__WEBPACK_IMPORTED_MODULE_2__;\nvar designApp = document.querySelector(\".services__img--app\");\ndesignApp.src = _img_app_design_jpg__WEBPACK_IMPORTED_MODULE_3__;\nvar designGraphic = document.querySelector(\".services__img--graphic\");\ndesignGraphic.src = _img_graphic_design_jpg__WEBPACK_IMPORTED_MODULE_4__;\nvar designWeb = document.querySelector(\".services__img--web\");\ndesignWeb.src = _img_web_design_jpg__WEBPACK_IMPORTED_MODULE_5__; // About Us\n\nvar passionateImg = document.querySelector(\".about-us__img--passionate\");\npassionateImg.src = _img_passionate_svg__WEBPACK_IMPORTED_MODULE_7__;\nvar resourcefulImg = document.querySelector(\".about-us__img--resourceful\");\nresourcefulImg.src = _img_resourceful_svg__WEBPACK_IMPORTED_MODULE_8__;\nvar friendlyImg = document.querySelector(\".about-us__img--friendly\");\nfriendlyImg.src = _img_friendly_svg__WEBPACK_IMPORTED_MODULE_6__;\nvar passionateBGImg = document.querySelector(\".about-us__bg-img--passionate\");\npassionateBGImg.src = _img_bg_pattern_about_us_svg__WEBPACK_IMPORTED_MODULE_9__;\nvar resourcefulBGImg = document.querySelector(\".about-us__bg-img--resourceful\");\nresourcefulBGImg.src = _img_bg_pattern_about_us_svg__WEBPACK_IMPORTED_MODULE_9__;\nvar friendlyBGImg = document.querySelector(\".about-us__bg-img--friendly\");\nfriendlyBGImg.src = _img_bg_pattern_about_us_svg__WEBPACK_IMPORTED_MODULE_9__; // Contact\n\nvar contactBGImg = document.querySelector(\".contact\");\ncontactBGImg.style.backgroundImage = \"url(\\\"\".concat(_img_bg_pattern_cta_svg__WEBPACK_IMPORTED_MODULE_10__, \"\\\")\"); // Footer\n\nvar logoLight = document.querySelector(\".footer__logo\");\nlogoLight.src = _img_logo_light_png__WEBPACK_IMPORTED_MODULE_11__;\nvar iconFb = document.querySelector(\".footer__icon--fb\");\niconFb.src = _img_icon_facebook_svg__WEBPACK_IMPORTED_MODULE_12__;\nvar iconYt = document.querySelector(\".footer__icon--yt\");\niconYt.src = _img_icon_youtube_svg__WEBPACK_IMPORTED_MODULE_16__;\nvar iconTw = document.querySelector(\".footer__icon--tw\");\niconTw.src = _img_icon_twitter_svg__WEBPACK_IMPORTED_MODULE_15__;\nvar iconPt = document.querySelector(\".footer__icon--pt\");\niconPt.src = _img_icon_pinterest_svg__WEBPACK_IMPORTED_MODULE_14__;\nvar iconIg = document.querySelector(\".footer__icon--ig\");\niconIg.src = _img_icon_instagram_svg__WEBPACK_IMPORTED_MODULE_13__;\n\n//# sourceURL=webpack://portfolio/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _img_logo_dark_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/logo-dark.png */ \"./src/img/logo-dark.png\");\n/* harmony import */ var _img_bg_pattern_hero_contact_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/bg-pattern-hero-contact.svg */ \"./src/img/bg-pattern-hero-contact.svg\");\n/* harmony import */ var _img_canada_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/canada.svg */ \"./src/img/canada.svg\");\n/* harmony import */ var _img_australia_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/australia.svg */ \"./src/img/australia.svg\");\n/* harmony import */ var _img_united_kingdom_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/united-kingdom.svg */ \"./src/img/united-kingdom.svg\");\n/* harmony import */ var _img_bg_pattern_small_circle_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/bg-pattern-small-circle.svg */ \"./src/img/bg-pattern-small-circle.svg\");\n/* harmony import */ var _img_logo_light_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/logo-light.png */ \"./src/img/logo-light.png\");\n/* harmony import */ var _img_icon_facebook_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/icon-facebook.svg */ \"./src/img/icon-facebook.svg\");\n/* harmony import */ var _img_icon_instagram_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/icon-instagram.svg */ \"./src/img/icon-instagram.svg\");\n/* harmony import */ var _img_icon_pinterest_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./img/icon-pinterest.svg */ \"./src/img/icon-pinterest.svg\");\n/* harmony import */ var _img_icon_twitter_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./img/icon-twitter.svg */ \"./src/img/icon-twitter.svg\");\n/* harmony import */ var _img_icon_youtube_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./img/icon-youtube.svg */ \"./src/img/icon-youtube.svg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar logoDark = document.querySelector(\".header__logo-img\");\nlogoDark.src = _img_logo_dark_png__WEBPACK_IMPORTED_MODULE_1__;\nvar heroBGImg = document.querySelector(\".contact-us__container\");\nheroBGImg.style.backgroundImage = \"url(\\\"\".concat(_img_bg_pattern_hero_contact_svg__WEBPACK_IMPORTED_MODULE_2__, \"\\\")\");\nvar canadaImg = document.querySelector(\".location__img--canada\");\ncanadaImg.src = _img_canada_svg__WEBPACK_IMPORTED_MODULE_3__;\nvar australiaImg = document.querySelector(\".location__img--australia\");\naustraliaImg.src = _img_australia_svg__WEBPACK_IMPORTED_MODULE_4__;\nvar unitedKingdomImg = document.querySelector(\".location__img--united-kingdom\");\nunitedKingdomImg.src = _img_united_kingdom_svg__WEBPACK_IMPORTED_MODULE_5__;\nvar bg = document.querySelectorAll(\".location__bg-img\");\nbg.forEach(function (elem) {\n  elem.src = _img_bg_pattern_small_circle_svg__WEBPACK_IMPORTED_MODULE_6__;\n}); // Footer\n\nvar logoLight = document.querySelector(\".footer__logo\");\nlogoLight.src = _img_logo_light_png__WEBPACK_IMPORTED_MODULE_7__;\nvar iconFb = document.querySelector(\".footer__icon--fb\");\niconFb.src = _img_icon_facebook_svg__WEBPACK_IMPORTED_MODULE_8__;\nvar iconYt = document.querySelector(\".footer__icon--yt\");\niconYt.src = _img_icon_youtube_svg__WEBPACK_IMPORTED_MODULE_12__;\nvar iconTw = document.querySelector(\".footer__icon--tw\");\niconTw.src = _img_icon_twitter_svg__WEBPACK_IMPORTED_MODULE_11__;\nvar iconPt = document.querySelector(\".footer__icon--pt\");\niconPt.src = _img_icon_pinterest_svg__WEBPACK_IMPORTED_MODULE_10__;\nvar iconIg = document.querySelector(\".footer__icon--ig\");\niconIg.src = _img_icon_instagram_svg__WEBPACK_IMPORTED_MODULE_9__;\n\n//# sourceURL=webpack://portfolio/./src/contact.js?");
 
 /***/ }),
 
@@ -30,63 +30,43 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/img/app-design.jpg":
-/*!********************************!*\
-  !*** ./src/img/app-design.jpg ***!
-  \********************************/
+/***/ "./src/img/australia.svg":
+/*!*******************************!*\
+  !*** ./src/img/australia.svg ***!
+  \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"img/app-design.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/app-design.jpg?");
+eval("module.exports = __webpack_require__.p + \"img/australia.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/australia.svg?");
 
 /***/ }),
 
-/***/ "./src/img/bg-pattern-about-us.svg":
-/*!*****************************************!*\
-  !*** ./src/img/bg-pattern-about-us.svg ***!
-  \*****************************************/
+/***/ "./src/img/bg-pattern-hero-contact.svg":
+/*!*********************************************!*\
+  !*** ./src/img/bg-pattern-hero-contact.svg ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"img/bg-pattern-about-us.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-pattern-about-us.svg?");
+eval("module.exports = __webpack_require__.p + \"img/bg-pattern-hero-contact.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-pattern-hero-contact.svg?");
 
 /***/ }),
 
-/***/ "./src/img/bg-pattern-cta.svg":
-/*!************************************!*\
-  !*** ./src/img/bg-pattern-cta.svg ***!
-  \************************************/
+/***/ "./src/img/bg-pattern-small-circle.svg":
+/*!*********************************************!*\
+  !*** ./src/img/bg-pattern-small-circle.svg ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"img/bg-pattern-cta.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-pattern-cta.svg?");
+eval("module.exports = __webpack_require__.p + \"img/bg-pattern-small-circle.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/bg-pattern-small-circle.svg?");
 
 /***/ }),
 
-/***/ "./src/img/friendly.svg":
-/*!******************************!*\
-  !*** ./src/img/friendly.svg ***!
-  \******************************/
+/***/ "./src/img/canada.svg":
+/*!****************************!*\
+  !*** ./src/img/canada.svg ***!
+  \****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"img/friendly.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/friendly.svg?");
-
-/***/ }),
-
-/***/ "./src/img/graphic-design.jpg":
-/*!************************************!*\
-  !*** ./src/img/graphic-design.jpg ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/graphic-design.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/graphic-design.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/hero-phone.png":
-/*!********************************!*\
-  !*** ./src/img/hero-phone.png ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/hero-phone.png\";\n\n//# sourceURL=webpack://portfolio/./src/img/hero-phone.png?");
+eval("module.exports = __webpack_require__.p + \"img/canada.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/canada.svg?");
 
 /***/ }),
 
@@ -160,33 +140,13 @@ eval("module.exports = __webpack_require__.p + \"img/logo-light.png\";\n\n//# so
 
 /***/ }),
 
-/***/ "./src/img/passionate.svg":
-/*!********************************!*\
-  !*** ./src/img/passionate.svg ***!
-  \********************************/
+/***/ "./src/img/united-kingdom.svg":
+/*!************************************!*\
+  !*** ./src/img/united-kingdom.svg ***!
+  \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"img/passionate.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/passionate.svg?");
-
-/***/ }),
-
-/***/ "./src/img/resourceful.svg":
-/*!*********************************!*\
-  !*** ./src/img/resourceful.svg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/resourceful.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/resourceful.svg?");
-
-/***/ }),
-
-/***/ "./src/img/web-design.jpg":
-/*!********************************!*\
-  !*** ./src/img/web-design.jpg ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"img/web-design.jpg\";\n\n//# sourceURL=webpack://portfolio/./src/img/web-design.jpg?");
+eval("module.exports = __webpack_require__.p + \"img/united-kingdom.svg\";\n\n//# sourceURL=webpack://portfolio/./src/img/united-kingdom.svg?");
 
 /***/ })
 
@@ -308,7 +268,7 @@ eval("module.exports = __webpack_require__.p + \"img/web-design.jpg\";\n\n//# so
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"index": 0,
+/******/ 			"contact": 0,
 /******/ 			"src_styles_main_scss-src_styles_main_scss": 0
 /******/ 		};
 /******/ 		
@@ -359,7 +319,7 @@ eval("module.exports = __webpack_require__.p + \"img/web-design.jpg\";\n\n//# so
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["src_styles_main_scss-src_styles_main_scss"], () => (__webpack_require__("./src/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["src_styles_main_scss-src_styles_main_scss"], () => (__webpack_require__("./src/contact.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

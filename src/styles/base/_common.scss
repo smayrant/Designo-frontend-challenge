@@ -12,8 +12,13 @@ html {
   max-width: 1350px;
   margin: 0 auto;
   padding: 0 25px;
+
+  @media (min-width: variables.$md-breakPt) {
+    padding: 0 35px;
+  }
 }
 
+// Styling for the locations' icons and buttons
 .location {
   margin-top: 6rem;
   text-align: center;
