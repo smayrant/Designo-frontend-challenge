@@ -3,9 +3,24 @@
 .about-us {
   margin-top: 6rem;
 
+  &__container {
+    position: relative;
+  }
+
+  @media (min-width: variables.$lg-breakPt) {
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: 100% -20%;
+    position: relative;
+  }
+
   &__item {
     @media (min-width: variables.$md-breakPt) {
       display: flex;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      flex-direction: column;
     }
 
     text-align: center;
@@ -13,6 +28,10 @@
     &:nth-child(2),
     &:nth-child(3) {
       margin-top: 4rem;
+
+      @media (min-width: variables.$lg-breakPt) {
+        margin-top: 0;
+      }
     }
   }
 
@@ -20,6 +39,10 @@
     @media (min-width: variables.$md-breakPt) {
       margin-left: 3.5rem;
       text-align: left;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      text-align: center;
     }
   }
 
@@ -34,6 +57,7 @@
     margin-top: 2.5rem;
     line-height: 1.5;
   }
+
   &__img-container {
     position: relative;
   }
@@ -45,5 +69,12 @@
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
+  }
+
+  &__bg-img {
+    position: absolute;
+    bottom: -250px;
+    right: -220px;
+    z-index: -1;
   }
 }

@@ -76,3 +76,21 @@ iconPt.src = ptIcon;
 
 const iconIg = document.querySelector(".footer__icon--ig");
 iconIg.src = igIcon;
+
+// Get burger menu, page mask and menu elements
+const burger = document.querySelector(".header__burger");
+const pageMask = document.querySelector(".page-mask");
+const navMenu = document.querySelector(".main-nav");
+
+const toggleVisibility = (...className) => {
+  document.body.classList.toggle("no-scroll");
+  className.forEach(function (className) {
+    console.log(className);
+    className.classList.toggle("visible");
+  });
+};
+
+burger.addEventListener(
+  "click",
+  toggleVisibility.bind(null, navMenu, pageMask)
+);

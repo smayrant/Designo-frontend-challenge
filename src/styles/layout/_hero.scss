@@ -13,6 +13,11 @@
   @media (min-width: variables.$md-breakPt) {
     border-radius: 15px;
   }
+
+  @media (min-width: variables.$lg-breakPt) {
+    padding-bottom: 4rem;
+  }
+
   background-color: variables.$peach;
   color: variables.$white;
   text-align: center;
@@ -25,6 +30,18 @@
   &__info-container {
     max-width: 490px;
     margin: 0 auto;
+
+    @media (min-width: variables.$lg-breakPt) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    text-align: left;
   }
 
   &__heading {
@@ -42,6 +59,7 @@
   &__button {
     margin-top: 1rem;
     @include mixins.button;
+    z-index: 5;
   }
 
   &__img-container {
@@ -52,8 +70,13 @@
   &__img {
     height: auto;
     position: absolute;
-    bottom: -47%;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: variables.$lg-breakPt) {
+      position: static;
+      right: -29%;
+      transform: translate(20%, -15%);
+    }
   }
 }

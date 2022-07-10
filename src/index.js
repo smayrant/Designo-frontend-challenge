@@ -5,6 +5,7 @@ import heroPhone from "./img/hero-phone.png";
 import appDesign from "./img/app-design.jpg";
 import graphicDesign from "./img/graphic-design.jpg";
 import webDesign from "./img/web-design.jpg";
+import aboutBGImg from "./img/bg-pattern-leaf.svg";
 import friendly from "./img/friendly.svg";
 import passionate from "./img/passionate.svg";
 import resourceful from "./img/resourceful.svg";
@@ -36,6 +37,9 @@ const designWeb = document.querySelector(".services__img--web");
 designWeb.src = webDesign;
 
 // About Us
+const aboutBG = document.querySelector(".about-us__bg-img");
+aboutBG.src = aboutBGImg;
+
 const passionateImg = document.querySelector(".about-us__img--passionate");
 passionateImg.src = passionate;
 
