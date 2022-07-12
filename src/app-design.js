@@ -74,7 +74,6 @@ const navMenu = document.querySelector(".main-nav");
 const toggleVisibility = (...className) => {
   document.body.classList.toggle("no-scroll");
   className.forEach(function (className) {
-    console.log(className);
     className.classList.toggle("visible");
   });
 };

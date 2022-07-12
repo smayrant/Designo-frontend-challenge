@@ -15,7 +15,53 @@
       display: block;
       width: 100%;
       height: auto;
+
+      @media (min-width: variables.$lg-breakPt) {
+        display: none;
+      }
     }
+  }
+
+  &__img-container--desktop {
+    @media (min-width: variables.$lg-breakPt) {
+      position: relative;
+      object-fit: contain;
+
+      img {
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__desktop-container {
+    @media (max-width: variables.$lg-breakPt) {
+      display: none;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      display: flex;
+      img {
+        border-radius: 15px;
+      }
+
+      .img-container--right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+
+        img {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  &__img--web-desktop {
+    height: 100%;
+    object-fit: cover;
   }
 
   &__img-overlay-container {
@@ -29,6 +75,30 @@
     width: 100%;
     color: variables.$white;
     text-align: center;
+
+    @media (min-width: variables.$lg-breakPt) {
+      display: none;
+    }
+  }
+
+  &__img-overlay-container--desktop {
+    @media (min-width: variables.$lg-breakPt) {
+      border-radius: 15px;
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      top: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      color: variables.$white;
+      text-align: center;
+    }
+  }
+
+  &__img-overlay--sm {
+    margin-left: 1rem;
+    bottom: 4px;
   }
 
   &__overlay-title {

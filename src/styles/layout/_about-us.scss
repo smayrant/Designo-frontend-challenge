@@ -76,5 +76,13 @@
     bottom: -250px;
     right: -220px;
     z-index: -1;
+
+    @media (max-width: variables.$lg-breakPt) {
+      display: none;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      display: inline;
+    }
   }
 }

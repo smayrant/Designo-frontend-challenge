@@ -5,6 +5,15 @@
 html {
   font-family: variables.$main-font;
   height: 100%;
+  @media (min-width: variables.$lg-breakPt) {
+    overflow-x: hidden;
+  }
+}
+
+body {
+  @media (min-width: variables.$lg-breakPt) {
+    overflow-x: hidden;
+  }
 }
 
 // Center container
