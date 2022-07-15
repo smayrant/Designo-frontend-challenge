@@ -5,8 +5,8 @@ import heroPhone from "./img/hero-phone.png";
 import appDesign from "./img/app-design.jpg";
 import graphicDesign from "./img/graphic-design.jpg";
 import webDesign from "./img/web-design.jpg";
-import appDesignLg from "./img/app-design-lg.jpg";
 import graphicDesignLg from "./img/graphic-design-lg.jpg";
+import appDesignLg from "./img/app-design-lg.jpg";
 import webDesignLg from "./img/web-design-lg.jpg";
 import aboutBGImg from "./img/bg-pattern-leaf.svg";
 import friendly from "./img/friendly.svg";
@@ -40,13 +40,13 @@ designGraphic.src = graphicDesign;
 const designWeb = document.querySelector(".services__img--web");
 designWeb.src = webDesign;
 
-const designAppLg = document.querySelector(".services__img--app-desktop");
-designAppLg.src = appDesignLg;
-
 const designGraphicLg = document.querySelector(
   ".services__img--graphic-desktop"
 );
 designGraphicLg.src = graphicDesignLg;
+
+const designAppLg = document.querySelector(".services__img--app-desktop");
+designAppLg.src = appDesignLg;
 
 const designWebLg = document.querySelector(".services__img--web-desktop");
 designWebLg.src = webDesignLg;

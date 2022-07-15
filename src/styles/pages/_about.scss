@@ -9,6 +9,10 @@
     border-radius: 0 0 15px 15px;
   }
 
+  @media (min-width: variables.$lg-breakPt) {
+    border-radius: 15px 0 0 15px;
+  }
+
   h1 {
     font-weight: 500;
     @media (min-width: variables.$md-breakPt) {
@@ -90,6 +94,41 @@
       max-height: 350px;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      max-height: 550px;
+      border-radius: 0 15px 15px 0;
+    }
+  }
+
+  @media (min-width: variables.$lg-breakPt) {
+    display: flex;
+    flex-direction: row-reverse;
+    img {
+      width: 40%;
+      // height: 391.5px;
+      object-fit: cover;
+    }
+  }
+  .hero__container--about {
+    width: 100%;
+    text-align: 6.5;
+
+    .hero--about {
+      @media (min-width: variables.$lg-breakPt) {
+        text-align: left;
+        padding: 4rem;
+        height: 400px;
+
+        h1 {
+          margin-left: 3rem;
+        }
+        p {
+          max-width: 450px;
+          margin-left: 3rem;
+        }
+      }
     }
   }
 }

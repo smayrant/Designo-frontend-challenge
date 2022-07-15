@@ -26,13 +26,18 @@
     @media (min-width: variables.$lg-breakPt) {
       position: relative;
       object-fit: contain;
-
+      width: 100%;
       img {
         border-radius: 15px;
         width: 100%;
-        height: auto;
+        height: 100%;
       }
     }
+  }
+
+  &__img-container--right {
+    margin-left: 1rem;
+    row-gap: 200px;
   }
 
   &__desktop-container {
@@ -42,7 +47,9 @@
 
     @media (min-width: variables.$lg-breakPt) {
       display: flex;
+
       img {
+        width: 100%;
         border-radius: 15px;
       }
 
@@ -51,17 +58,21 @@
         flex-direction: column;
         justify-content: space-between;
         width: 50%;
-
-        img {
-          margin-left: 1rem;
-        }
       }
     }
   }
 
-  &__img--web-desktop {
-    height: 100%;
-    object-fit: cover;
+  &__container--desktop {
+    @media (min-width: variables.$lg-breakPt) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__container--web-desktop {
+    display: flex;
+    width: 50%;
   }
 
   &__img-overlay-container {
@@ -85,7 +96,7 @@
     @media (min-width: variables.$lg-breakPt) {
       border-radius: 15px;
       position: absolute;
-      bottom: 4px;
+      bottom: 0;
       left: 0;
       top: 0;
       right: 0;
@@ -96,9 +107,20 @@
     }
   }
 
+  &__img-container--design {
+    margin-right: 2rem;
+  }
+
+  &__container--design {
+    @media (max-width: variables.$lg-breakPt) {
+      display: none;
+    }
+
+    margin-top: 3.5rem;
+  }
+
   &__img-overlay--sm {
-    margin-left: 1rem;
-    bottom: 4px;
+    bottom: 0;
   }
 
   &__overlay-title {

@@ -6,6 +6,8 @@ import changeImg from "./img/change.jpg";
 import scienceImg from "./img/science.jpg";
 import appDesign from "./img/app-design.jpg";
 import webDesign from "./img/web-design.jpg";
+import appDesignLg from "./img/app-design-lg.jpg";
+import webDesignLg from "./img/web-design-desktop-sm.jpg";
 import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
@@ -25,6 +27,12 @@ designApp.src = appDesign;
 
 const designWeb = document.querySelector(".services__img--web");
 designWeb.src = webDesign;
+
+const designAppLg = document.querySelector(".services__img--app-desktop");
+designAppLg.src = appDesignLg;
+
+const designWebLg = document.querySelector(".services__img--web-desktop");
+designWebLg.src = webDesignLg;
 
 const boxedWater = document.querySelector(".design__card-img--boxed-water");
 boxedWater.src = boxedWaterImg;

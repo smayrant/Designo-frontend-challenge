@@ -8,6 +8,8 @@ import todoImg from "./img/todo.jpg";
 import loopstudiosImg from "./img/loopstudios.jpg";
 import graphicDesign from "./img/graphic-design.jpg";
 import webDesign from "./img/web-design.jpg";
+import graphicDesignLg from "./img/graphic-design-lg.jpg";
+import webDesignLg from "./img/web-design-desktop-sm.jpg";
 import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
@@ -38,10 +40,22 @@ const airfilter = document.querySelector(".design__card-img--airfilter");
 airfilter.src = airfilterImg;
 
 const designWeb = document.querySelector(".services__img--web");
-designWeb.src = webDesign;
+if (designWeb) {
+  designWeb.src = webDesign;
+}
 
 const designGraphic = document.querySelector(".services__img--graphic");
-designGraphic.src = graphicDesign;
+if (designGraphic) {
+  designGraphic.src = graphicDesign;
+}
+
+const designGraphicLg = document.querySelector(
+  ".services__img--graphic-desktop"
+);
+designGraphicLg.src = graphicDesignLg;
+
+const designWebLg = document.querySelector(".services__img--web-desktop");
+designWebLg.src = webDesignLg;
 
 // Contact
 const contactBGImg = document.querySelector(".contact");

@@ -9,6 +9,8 @@ import blogrImg from "./img/blogr.jpg";
 import campImg from "./img/camp.jpg";
 import appDesign from "./img/app-design.jpg";
 import graphicDesign from "./img/graphic-design.jpg";
+import appDesignLg from "./img/app-design-lg.jpg";
+import graphicDesignLg from "./img/graphic-design-lg.jpg";
 import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
 import fbIcon from "./img/icon-facebook.svg";
@@ -46,6 +48,14 @@ designApp.src = appDesign;
 
 const designGraphic = document.querySelector(".services__img--graphic");
 designGraphic.src = graphicDesign;
+
+const designAppLg = document.querySelector(".services__img--app-desktop");
+designAppLg.src = appDesignLg;
+
+const designGraphicLg = document.querySelector(
+  ".services__img--graphic-desktop"
+);
+designGraphicLg.src = graphicDesignLg;
 
 // Contact
 const contactBGImg = document.querySelector(".contact");

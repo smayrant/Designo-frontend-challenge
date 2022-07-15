@@ -12,6 +12,12 @@
   position: relative;
   bottom: -185px;
 
+  &__heading-cta-container {
+    @media (min-width: variables.$lg-breakPt) {
+      text-align: left;
+    }
+  }
+
   &__heading {
     margin-top: 0;
     font-size: 1.9rem;
@@ -23,6 +29,11 @@
       font-size: 2.5rem;
       max-width: 340px;
       margin: 0 auto;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      margin: 0;
+      padding-left: 0;
     }
   }
 
@@ -47,6 +58,14 @@
     @media (min-width: variables.$md-breakPt) {
       max-width: 400px;
       margin: 0 auto;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      display: flex;
+      max-width: 1350px;
+      justify-content: space-between;
+      padding: 0 6rem;
+      align-items: center;
     }
   }
 }

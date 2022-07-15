@@ -1,6 +1,8 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
+// Styling for the app, web and graphic design pages
+
 .hero__container--design {
   @media (min-width: variables.$md-breakPt) {
     max-width: 1350px;
@@ -38,11 +40,19 @@
 
 .design {
   margin-top: 5rem;
+
+  @media (min-width: variables.$lg-breakPt) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+  }
+
   &__card-container {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
+
     img {
       max-width: 100%;
       height: auto;
@@ -53,12 +63,21 @@
         max-width: 50%;
         border-radius: 15px 0 0 15px;
       }
+
+      @media (min-width: variables.$lg-breakPt) {
+        border-radius: 15px 15px 0 0;
+        max-width: 100%;
+      }
     }
 
     @media (min-width: variables.$md-breakPt) {
       display: flex;
       flex-direction: row;
       width: 100%;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      flex-direction: column;
     }
   }
 
@@ -75,6 +94,11 @@
       justify-content: center;
       width: 50%;
       border-radius: 0 15px 15px 0;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      border-radius: 0 0 15px 15px;
+      width: 100%;
     }
 
     h3 {
