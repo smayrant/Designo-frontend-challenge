@@ -11,6 +11,11 @@
       padding: 0 35px;
       margin-bottom: 3rem;
     }
+
+    @media (min-width: variables.$lg-breakPt) {
+      display: flex;
+      height: 300px;
+    }
     img {
       display: block;
 
@@ -18,6 +23,12 @@
         width: 100%;
         border-radius: 15px;
         margin-bottom: 1.5rem;
+      }
+
+      @media (min-width: variables.$lg-breakPt) {
+        width: 40%;
+        // height: 100%;?
+        margin-bottom: 0;
       }
     }
   }
@@ -32,6 +43,11 @@
     @media (min-width: variables.$md-breakPt) {
       border-radius: 15px;
       margin-bottom: 8rem;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      width: 60%;
+      margin-bottom: 0;
     }
   }
 
