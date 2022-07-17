@@ -3,6 +3,9 @@ import darkLogo from "./img/logo-dark.png";
 import canada from "./img/map-canada.png";
 import australia from "./img/map-australia.png";
 import unitedKingdom from "./img/map-uk.png";
+import canadaDesktop from "./img/map-canada-desktop.png";
+import australiaDesktop from "./img/map-australia-desktop.png";
+import unitedKingdomDesktop from "./img/map-uk-desktop.png";
 import bgImg from "./img/bg-pattern-three-circles.svg";
 import contactBG from "./img/bg-pattern-cta.svg";
 import lightLogo from "./img/logo-light.png";
@@ -23,6 +26,21 @@ australiaImg.src = australia;
 
 const unitedKingdomImg = document.querySelector(".locations__img--uk");
 unitedKingdomImg.src = unitedKingdom;
+
+const canadaImgDesktop = document.querySelector(
+  ".locations__img--canada-desktop"
+);
+canadaImgDesktop.src = canadaDesktop;
+
+const australiaImgDesktop = document.querySelector(
+  ".locations__img--australia-desktop"
+);
+australiaImgDesktop.src = australiaDesktop;
+
+const unitedKingdomImgDesktop = document.querySelector(
+  ".locations__img--uk-desktop"
+);
+unitedKingdomImgDesktop.src = unitedKingdomDesktop;
 
 const bg = document.querySelectorAll(".locations__address-container");
 bg.forEach(function (elem) {

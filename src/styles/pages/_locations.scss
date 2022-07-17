@@ -6,17 +6,23 @@
     margin-bottom: 3rem;
 
     @media (min-width: variables.$md-breakPt) {
-      max-width: 1350px;
+      max-width: 1300px;
       margin: 0 auto;
-      padding: 0 35px;
+      padding: 0 45px;
       margin-bottom: 3rem;
     }
 
     @media (min-width: variables.$lg-breakPt) {
+      padding: 0 65px;
       display: flex;
-      height: 300px;
+      height: 320px;
+      justify-content: space-between;
+      width: 100%;
     }
-    img {
+
+    .locations__img--canada,
+    .locations__img--australia,
+    .locations__img--uk {
       display: block;
 
       @media (min-width: variables.$md-breakPt) {
@@ -26,10 +32,38 @@
       }
 
       @media (min-width: variables.$lg-breakPt) {
-        width: 40%;
-        // height: 100%;?
-        margin-bottom: 0;
+        display: none;
       }
+    }
+
+    .locations__img--canada-desktop,
+    .locations__img--australia-desktop,
+    .locations__img--uk-desktop {
+      @media (max-width: variables.$lg-breakPt) {
+        display: none;
+      }
+
+      @media (min-width: variables.$lg-breakPt) {
+        margin-bottom: 0;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  &__container--canada,
+  &__container--uk {
+    @media (min-width: variables.$lg-breakPt) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__address-contact-container {
+    @media (min-width: variables.$lg-breakPt) {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      text-align: left;
+      margin-left: 4rem;
     }
   }
 
@@ -46,8 +80,19 @@
     }
 
     @media (min-width: variables.$lg-breakPt) {
-      width: 60%;
+      // width: 65%;
       margin-bottom: 0;
+      padding: 0;
+      position: relative;
+      flex-basis: 65%;
+    }
+  }
+
+  &__address-content {
+    @media (min-width: variables.$lg-breakPt) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
@@ -57,6 +102,14 @@
 
   &__title {
     @include mixins.peachTitle;
+
+    @media (min-width: variables.$lg-breakPt) {
+      text-align: left;
+      margin: 2rem 4rem;
+      font-size: 2.5rem;
+      margin-left: 4rem;
+      margin-top: 0;
+    }
   }
 
   &__address {
@@ -64,10 +117,18 @@
     div:first-child {
       font-weight: 600;
     }
+
+    @media (min-width: variables.$lg-breakPt) {
+      margin-right: 5rem;
+    }
   }
 
   &__contact-us {
     margin-top: 1.5rem;
+
+    @media (min-width: variables.$lg-breakPt) {
+      margin-top: 0;
+    }
   }
 
   &__contact {

@@ -92,13 +92,14 @@
   &__talent-container,
   &__real-deal-container {
     @media (min-width: variables.$md-breakPt) {
-      max-width: 1350px;
+      max-width: 1300px;
       margin: 0 auto;
-      padding: 0 35px;
+      padding: 0 45px;
     }
 
     @media (min-width: variables.$lg-breakPt) {
       display: flex;
+      padding: 0 65px;
     }
 
     img {
@@ -129,10 +130,13 @@
 
 .img-hero__container {
   @media (min-width: variables.$md-breakPt) {
-    max-width: 1350px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 45px;
     margin-bottom: 6rem;
+  }
+  @media (min-width: variables.$lg-breakPt) {
+    padding: 0 65px;
   }
   img {
     @media (min-width: variables.$md-breakPt) {

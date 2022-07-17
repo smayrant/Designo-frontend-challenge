@@ -18,12 +18,16 @@ body {
 
 // Center container
 .center {
-  max-width: 1350px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 25px;
 
   @media (min-width: variables.$md-breakPt) {
-    padding: 0 35px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: variables.$lg-breakPt) {
+    padding: 0 65px;
   }
 }
 

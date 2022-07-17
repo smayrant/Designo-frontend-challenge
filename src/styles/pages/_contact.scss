@@ -4,9 +4,13 @@
 .contact-us {
   &__bg {
     @media (min-width: variables.$md-breakPt) {
-      max-width: 1350px;
+      max-width: 1300px;
       margin: 0 auto;
-      padding: 0 35px;
+      padding: 0 45px;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      padding: 0 65px;
     }
   }
   &__container {
