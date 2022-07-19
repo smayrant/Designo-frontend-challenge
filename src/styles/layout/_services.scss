@@ -102,6 +102,11 @@
       width: 100%;
       color: variables.$white;
       text-align: center;
+
+      &:hover {
+        background: rgba(231, 129, 107, 0.8);
+        transition: all 0.3s;
+      }
     }
   }
 

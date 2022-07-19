@@ -6,6 +6,12 @@
   border-radius: 8px;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    color: variables.$white;
+    background-color: variables.$light-peach;
+    transition: all 0.3s;
+  }
 }
 
 @mixin orangeHero {

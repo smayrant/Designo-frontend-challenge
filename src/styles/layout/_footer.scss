@@ -33,9 +33,32 @@
     margin-top: 1.7rem;
     font-size: 14px;
     letter-spacing: 2px;
+    color: variables.$grey-text;
 
     @media (min-width: variables.$md-breakPt) {
       margin-top: 0;
+    }
+
+    @media (min-width: variables.$lg-breakPt) {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: variables.$grey-text;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
     }
   }
 
