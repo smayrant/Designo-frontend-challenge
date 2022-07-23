@@ -58,6 +58,10 @@
     @media (min-width: variables.$md-breakPt) {
       font-size: 3rem;
     }
+
+    @media (min-width: variables.$lg-breakPt) {
+      max-width: 600px;
+    }
   }
 
   &__description {
