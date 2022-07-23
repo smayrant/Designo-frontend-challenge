@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: "./src/index.js",
     webDesign: "./src/web-design.js",
@@ -69,36 +69,43 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/index.html",
+      favicon: "src/img/favicon.png",
       chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
       filename: "web-design.html",
       template: "src/web-design.html",
+      favicon: "src/img/favicon.png",
       chunks: ["webDesign"],
     }),
     new HtmlWebpackPlugin({
       filename: "app-design.html",
       template: "src/app-design.html",
+      favicon: "src/img/favicon.png",
       chunks: ["appDesign"],
     }),
     new HtmlWebpackPlugin({
       filename: "graphic-design.html",
       template: "src/graphic-design.html",
+      favicon: "src/img/favicon.png",
       chunks: ["graphicDesign"],
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
       template: "src/about.html",
+      favicon: "src/img/favicon.png",
       chunks: ["about"],
     }),
     new HtmlWebpackPlugin({
       filename: "locations.html",
       template: "src/locations.html",
+      favicon: "src/img/favicon.png",
       chunks: ["locations"],
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
       template: "src/contact.html",
+      favicon: "src/img/favicon.png",
       chunks: ["contact"],
     }),
     new MiniCssExtractPlugin(),

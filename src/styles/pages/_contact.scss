@@ -24,6 +24,7 @@
     @include mixins.orangeHero;
     background-size: cover;
     background-position: top;
+    padding-bottom: 7.5rem;
 
     h2 {
       font-weight: 500;
@@ -41,6 +42,7 @@
     form {
       input,
       textarea {
+        position: relative;
         outline: none;
         display: block;
         width: 100%;
@@ -72,6 +74,10 @@
       border-radius: 15px;
       padding-bottom: 10rem;
     }
+
+    @media (min-width: variables.$md-breakPt) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__container--inner {
@@ -98,4 +104,14 @@
   font-size: 15px;
   color: variables.$placeholder-text;
   opacity: 1;
+}
+
+.input__container {
+  position: relative;
+
+  div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }

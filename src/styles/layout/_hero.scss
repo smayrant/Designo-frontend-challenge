@@ -44,7 +44,13 @@
   }
 
   &__info {
-    text-align: left;
+    text-align: center;
+
+    @media (min-width: variables.$lg-breakPt) {
+      flex-basis: 70%;
+      width: 500px;
+      text-align: left;
+    }
   }
 
   &__heading {
@@ -57,29 +63,44 @@
   &__description {
     line-height: 1.5;
     font-size: 15px;
+    max-width: 410px;
+    margin: 0 auto;
+
+    @media (min-width: variables.$lg-breakPt) {
+      margin: 0;
+    }
   }
 
   &__button {
     margin-top: 1rem;
     @include mixins.button;
     z-index: 5;
+
+    @media (min-width: variables.$lg-breakPt) {
+      margin-top: 3rem;
+    }
   }
 
   &__img-container {
-    height: 450px;
+    height: 480px;
     text-align: center;
+
+    @media (min-width: variables.$lg-breakPt) {
+      flex-basis: 30%;
+      max-width: 30%;
+    }
   }
 
   &__img {
     height: auto;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -5%);
 
     @media (min-width: variables.$lg-breakPt) {
       position: static;
       right: -29%;
-      transform: translate(20%, -15%);
+      transform: translate(-24%, -11%);
     }
   }
 }
