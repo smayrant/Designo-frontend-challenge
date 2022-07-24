@@ -51,6 +51,7 @@
         border-bottom: 1.1px solid variables.$white;
         background: transparent;
         margin-bottom: 10px;
+        color: variables.$white;
       }
 
       button {
@@ -73,10 +74,6 @@
     @media (min-width: variables.$md-breakPt) {
       border-radius: 15px;
       padding-bottom: 10rem;
-    }
-
-    @media (min-width: variables.$md-breakPt) {
-      padding-bottom: 5rem;
     }
   }
 
