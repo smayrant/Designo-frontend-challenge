@@ -9,16 +9,19 @@
   }
   @media (min-width: variables.$lg-breakPt) {
     padding: 0 65px;
+    margin-bottom: 8rem;
   }
 }
 
 .hero {
   @media (min-width: variables.$md-breakPt) {
     border-radius: 15px;
+    height: 845px;
   }
 
   @media (min-width: variables.$lg-breakPt) {
     padding-bottom: 4rem;
+    height: 640px;
   }
 
   background-color: variables.$peach;
@@ -47,9 +50,9 @@
     text-align: center;
 
     @media (min-width: variables.$lg-breakPt) {
-      flex-basis: 70%;
       width: 500px;
       text-align: left;
+      transform: translateY(8%);
     }
   }
 
@@ -104,7 +107,7 @@
     @media (min-width: variables.$lg-breakPt) {
       position: static;
       right: -29%;
-      transform: translate(-24%, -11%);
+      transform: translate(-24%, -6%);
     }
   }
 }

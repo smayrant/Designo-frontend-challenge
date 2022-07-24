@@ -17,7 +17,7 @@
           <div class="header__burger-line"></div>
           <div class="header__burger-line"></div>
         </div>
-        <nav class="header__nav" aria-label="mobile-menu-navigation">
+        <nav class="header__nav" aria-label="desktop-menu-navigation">
           <ul class="header__nav-links">
             <li><a href="/about.html">our company</a></li>
             <li><a href="/locations.html">locations</a></li>
@@ -27,7 +27,7 @@
       </div>
     </header>
     <div class="page-mask"></div>
-    <nav class="main-nav" aria-label="desktop-menu-navigation">
+    <nav class="main-nav" aria-label="mobile-menu-navigation">
       <ul class="nav-links">
         <li><a href="/about.html">our company</a></li>
         <li><a href="/locations.html">locations</a></li>
@@ -159,12 +159,28 @@
         </div>
       </div>
     </section>
-    <section class="footer__container">
+    <div class="footer__container">
       <footer class="footer">
         <div class="footer__logo-links center">
           <div class="footer__logo-links--desktop">
             <img src="" alt="Footer Logo" class="footer__logo" />
             <nav class="footer__link-container footer__link-container--desktop">
+              <ul class="footer__links">
+                <li class="footer__link">
+                  <a href="/about.html">our company</a>
+                </li>
+                <li class="footer__link">
+                  <a href="/locations.html">locations</a>
+                </li>
+                <li class="footer__link">
+                  <a href="/contact.html">contact us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <hr class="center" />
+          <nav class="footer__link-container footer__link-container--mobile">
+            <ul class="footer__links">
               <li class="footer__link">
                 <a href="/about.html">our company</a>
               </li>
@@ -174,15 +190,7 @@
               <li class="footer__link">
                 <a href="/contact.html">contact us</a>
               </li>
-            </nav>
-          </div>
-          <hr class="center" />
-          <nav class="footer__link-container footer__link-container--mobile">
-            <li class="footer__link"><a href="/about.html">our company</a></li>
-            <li class="footer__link">
-              <a href="/locations.html">locations</a>
-            </li>
-            <li class="footer__link"><a href="/contact.html">contact us</a></li>
+            </ul>
           </nav>
         </div>
         <div class="footer__contact-info-container center">
@@ -225,6 +233,6 @@
           </div>
         </div>
       </footer>
-    </section>
+    </div>
   </body>
 </html>
