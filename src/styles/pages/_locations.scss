@@ -24,9 +24,9 @@
     .locations__img--australia,
     .locations__img--uk {
       display: block;
+      width: 100%;
 
       @media (min-width: variables.$md-breakPt) {
-        width: 100%;
         border-radius: 15px;
         margin-bottom: 1.5rem;
       }
@@ -80,7 +80,6 @@
     }
 
     @media (min-width: variables.$lg-breakPt) {
-      // width: 65%;
       margin-bottom: 0;
       padding: 0;
       position: relative;

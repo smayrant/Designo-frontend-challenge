@@ -8,8 +8,8 @@
   margin-bottom: 28px;
 
   @media (min-width: variables.$md-breakPt) {
-    margin-top: 64px;
-    margin-bottom: 68px;
+    margin-top: 55px;
+    margin-bottom: 55px;
   }
 
   &__logo-img {
@@ -40,6 +40,7 @@
   }
 
   &__nav-links {
+    font-size: 14px;
     @media (max-width: variables.$md-breakPt) {
       display: none;
     }
