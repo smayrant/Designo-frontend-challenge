@@ -62,13 +62,11 @@
     }
   }
 
-  &__link-container--mobile {
-    @media (min-width: variables.$md-breakPt) {
-      display: none;
-    }
+  &__links {
+    padding-left: 0;
   }
 
-  &__link-container--desktop {
+  &__links--desktop {
     @media (max-width: variables.$md-breakPt) {
       display: none;
     }
@@ -78,6 +76,12 @@
       li {
         margin-left: 1rem;
       }
+    }
+  }
+
+  &__link-container--mobile {
+    @media (min-width: variables.$md-breakPt) {
+      display: none;
     }
   }
 
