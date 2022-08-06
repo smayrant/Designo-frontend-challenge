@@ -102,7 +102,7 @@
     height: auto;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -5%);
+    transform: translate(-50%, -1%);
 
     @media (min-width: variables.$lg-breakPt) {
       position: static;
